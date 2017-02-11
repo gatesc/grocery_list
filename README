@@ -1,0 +1,45 @@
+
+configuring the datasource...
+   lb datasource
+
+starting the mongodb database...
+   mongodb -port 9334 -dbpath /home/gates/sandbox/git.checkout/grocery_list/extra/db
+
+starting the mongo client
+   mongo --port 9334
+
+to switch to the grocery list database
+   use grocery_list
+   
+to be the admin...
+   use admin
+
+to see the users...
+   show users
+
+allowed roles for a user...
+   read,
+   readAnyDatabase,
+   readWrite,
+   readWriteAnyDatabase,
+   dbAdmin,
+   dbAdminAnyDatabase,
+   clusterAdmin,
+   userAdmin,
+   userAdminAnyDatabase
+   
+to add a user...
+   db.createUser(
+       {user: "gates",
+        pwd: "blah",
+	roles: ["readWrite", "dbAdmin"]})
+
+   Hmm, addUser is DEPRECATED.  Supposed to use createUser
+   
+to remove a user...
+   db.removeUser( {user: "gates"} )
+
+adding stuff to the database...
+   col = db.getCollection("items")
+   col.insert({name: "bread", cost: "$3.99", aisle: "12"})
+   

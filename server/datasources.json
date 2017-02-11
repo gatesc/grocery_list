@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "0.0.0.0",
+    "port": 9334,
+    "url": "mongodb://application:456abcd123@0.0.0.0:9334/grocery_list",
+    "database": "grocery_list",
+    "password": "456abcd123",
+    "name": "mongodb",
+    "user": "application",
+    "connector": "mongodb"
+  }
+}
