@@ -1,0 +1,33 @@
+{
+    "name": "person",
+    "plural": "person",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+	"validateUpsert": true
+    },
+    "properties": {
+	"username": {
+	    "type": "string",
+	    "required": true,
+	    "index": true,
+	    "id": "string"
+	},
+	"lastname": {
+	    "type": "string"
+	},
+	"firstname": {
+	    "type": "string"
+	},
+	"middlename": {
+	    "type": "string"
+	},
+	"email": {
+	    "type": "string"
+	}
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

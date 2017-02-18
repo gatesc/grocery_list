@@ -1,0 +1,29 @@
+{
+    "name": "items",
+    "plural": "items",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+	"validateUpsert": true
+    },
+    "properties": {
+	"name": {
+	    "type": "string",
+	    "required": true,
+	    "index": true
+	},
+	"cost": {
+	    "type": "number"
+	},
+	"aisle": {
+	    "type": "string"
+	},
+	"store": {
+	    "type": "string"
+	}
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

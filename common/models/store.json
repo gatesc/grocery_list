@@ -1,0 +1,33 @@
+{
+    "name": "store",
+    "plural": "store",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+	"validateUpsert": true
+    },
+    "properties": {
+	"name": {
+	    "type": "string",
+	    "required": true,
+	    "index": true
+	},
+	"street": {
+	    "type": "string"
+	},
+	"city": {
+	    "type": "string"
+	},
+	"zipcode": {
+	    "type": "string"
+	},
+	"other": {
+	    "type": "string",
+	    "required": false
+	}
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
