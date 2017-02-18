@@ -3,7 +3,7 @@ configuring the datasource...
    lb datasource
 
 starting the mongodb database...
-   mongodb -port 9334 -dbpath /home/gates/sandbox/git.checkout/grocery_list/extra/db
+   mongod -port 9334 -dbpath /home/gates/sandbox/git.checkout/grocery_list/extra/db
 
 starting the mongo client
    mongo --port 9334
